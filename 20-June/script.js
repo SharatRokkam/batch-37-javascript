@@ -66,19 +66,19 @@
 // 2. Non-primitive data type
 
 // Primitive Data types
-// 1.Number 2. String 3. Undefined 4. Boolean 5. Null 6. BigInt 7. Symbol
+// 1.Number 2. String 3. Undefined 4. Boolean 5. Null 6. BigInt(ES11) 7. Symbol(ES6)
 
-// Non-primitive Datatypes(user-defined datatype)
+// Non-primitive Datatypes(user-defined datatype or reference datatype)
 // 1. Array 2. Object
 
 // Number : integer, float and decimal
-// let first = 100;
+let first = 100;
 // let second = 100.500;
-// console.log(first);
+console.log(first);
 
 // Using NumberConstructor ------------
-// let secondWay = new Number(3900);
-// console.log(secondWay);
+let secondWay = new Number(3900);
+console.log(secondWay);
 
 
 // String 
