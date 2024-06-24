@@ -49,7 +49,7 @@
 
 // Everything in Javascript is an object
 
-// Array : is an object which can store multiple data or value under one variable
+// Array : is an object which can store multiple data or value under one variable name
 
 // 1st Way
 // let randomArray = ["Harish", 100, true];
