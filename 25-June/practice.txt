@@ -1,0 +1,6 @@
+
+// Practice Set - for, while and do while
+1. Refer the shopping cart question, Write a logic to print the items in the console.
+2. Print the multiplication table for 4 from ( 1 to 10) (for loop)
+3. Print all the odd number between 1 to 20 (while loop)
+4. Print numbers from 10 to 1 (do while loop)
