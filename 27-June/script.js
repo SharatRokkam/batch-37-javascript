@@ -22,7 +22,7 @@
 
 // 2. Create a function which takes parameter celsius and converts in to fahrenheit and print it on the console.
 // function conversion(celsius) {
-//   // BODMAS rule
+// BODMAS rule
 //   let fahrenheit = (celsius * 9) / 5 + 32;
 //   console.log(fahrenheit + " fahrenheit");
 // }
