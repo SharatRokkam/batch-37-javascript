@@ -19,6 +19,8 @@
 // const marks = new Number(34);
 // console.log(marks.valueOf());
 
+// ----------------------------------------------------------------------------------------------
+
 // String Methods
 
 // let name1 = new String("Lahari");
