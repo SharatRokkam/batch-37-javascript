@@ -64,5 +64,5 @@
 
 const attr = document
   .querySelector("#example")
-  .setAttribute("class", "text random random1");
+  .setAttribute("class", " text random");
 const attr2 = document.querySelector("#example").setAttribute("id", " random1");

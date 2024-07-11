@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer </title>
+
+    <style>
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .buttons {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #orange {
+            background-color: orange;
+        }
+
+        #yellow {
+            background-color: yellow;
+        }
+
+        #blue {
+            background-color: blue;
+        }
+
+        #pink {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Background Changer</h2>
+    <!-- <div class="box">
+        <div class="buttons" >
+            
+        </div>
+        <div class="buttons" id="blue"></div>
+        <div class="buttons" id="orange"></div>
+        <div class="buttons" id="yellow"></div>
+        <div class="buttons" id="pink"></div>
+    </div> -->
+
+    <ul>
+        <li><img src="https://i.pinimg.com/736x/27/f8/3a/27f83a1a4952e167b728d00e2a3f0e30.jpg" width="200px" alt=""
+                id="sportsBike" /> </li>
+
+    </ul>
+
+    <script>
+        document.getElementById('sportsBike').onclick = function () {
+            alert('clicked');
+        };
+
+
+        //good practice and practical approach
+        // document.getElementById('sportsBike').addEventListener('click', (e) => {
+        //     console.log("click :", e.target);
+        // })
+
+    </script>
+</body>
+
+</html>
