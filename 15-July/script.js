@@ -64,24 +64,34 @@
 // Promise : Heaven for callback hell (es6)
 //Aysnc Await (es7)
 
-function printVowels() {
-  setTimeout(() => {
-    console.log("a");
-    setTimeout(() => {
-      console.log("e");
-      setTimeout(() => {
-        console.log("i");
-        setTimeout(() => {
-          console.log("o");
-          setTimeout(() => {
-            console.log("u");
-          }, 1000);
-        }, 3000);
-      }, 2000);
-    }, 1000);
-  }, 6000);
-}
+// function printVowels() {
+//   setTimeout(() => {
+//     console.log("a");
+//     setTimeout(() => {
+//       console.log("e");
+//       setTimeout(() => {
+//         console.log("i");
+//         setTimeout(() => {
+//           console.log("o");
+//           setTimeout(() => {
+//             console.log("u");
+//           }, 1000);
+//         }, 3000);
+//       }, 2000);
+//     }, 1000);
+//   }, 6000);
+// }
 
-printVowels();
+// printVowels();
 
-// Method vs Function 
+// Method vs Function
+
+// let obj = {
+//   name: "newName",
+//   age: 23,
+//   details: function () {
+//     return this.name + this.age;
+//   },
+// };
+
+// console.log(obj.details());
