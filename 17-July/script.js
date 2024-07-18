@@ -99,7 +99,7 @@
 // Fetch : we need data that can be fetched from API or resource
 
 document.addEventListener("DOMContentLoaded", () => {
-  async function fetchTitles() {
+  async function fetchData() {
     try {
       const response = await fetch(
         "https://jsonplaceholder.typicode.com/todos/"
@@ -114,18 +114,28 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (error) {
       console.error("Error", error);
     }
+
+    function populateData(data) {
+      const tableBody = document.querySelector(".table-data tbody");
+
+      data.forEach((post) => {
+        const row = document.createElement("tr");
+
+        const idCell = document.createElement("td");
+        idCell.textContent = post.id;
+        row.appendChild(idCell);
+
+        const titleCell = document.createElement("td");
+        titleCell.textContent = post.title;
+        row.appendChild(titleCell);
+
+        const completedCell = document.createElement("td");
+        completedCell.textContent = post.completed;
+        row.appendChild(completedCell);
+
+        tableBody.appendChild(row);
+      });
+    }
   }
-
-  function populateData(data) {
-    const titleList = document.querySelector("ul");
-
-    data.forEach((post) => {
-      const listItem = document.createElement("li");
-
-      listItem.textContent = post.title;
-
-      titleList.appendChild(listItem);
-    });
-  }
-  fetchTitles();
+  fetchData();
 });
