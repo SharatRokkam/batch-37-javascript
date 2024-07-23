@@ -109,3 +109,7 @@ class Tiger extends Animal {
 const animals = [new Dog("Boxer"), new Cat("Sundari"), new Tiger("Leo")];
 
 animals.forEach((animal) => animal.speak());
+
+// ----------------------------------------------------------------------------------------------------
+
+// Regular Expression(RegEx) and Form Validation 
