@@ -53,3 +53,40 @@
 //   });
 // });
 
+// ----------------------------------------------------------------------------------------
+
+// $(function () {
+//   $("button").click(function () {
+//     $("#div1").fadeToggle();
+//     $("#div2").fadeToggle("slow");
+//     $("#div3").fadeToggle(4000);
+//   });
+// });
+
+// $(document).ready(function () {
+//   function bounceBall() {
+//     $("#ball")
+//       .animate({ top: "450px" }, 500, "swing")
+//       .animate({ top: "0px" }, 500, "swing", bounceBall);
+//   }
+
+//   bounceBall();
+// });
+
+$(document).ready(function () {
+  $("#fetchData").click(function () {
+    $.ajax({
+      url: "https://jsonplaceholder.typicode.com/posts/1",
+      type: "GET",
+      success: function (response) {
+        $("#response").html(
+          `<p>Title: ${response.title}</p><p>Body: ${response.body}</p>`
+        );
+      },
+      error: function (xhr, status, error) {
+        $("#response").html(`<p>Error: ${status}</p><p>${error}</p>`);
+      },
+    });
+  });
+});
+
